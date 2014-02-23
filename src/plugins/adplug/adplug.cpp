@@ -124,11 +124,10 @@ static gint64 xmms_adplug_seek (xmms_xform_t *xform, gint64 samples, xmms_xform_
 /*
  * Plugin header
  */
-XMMS_XFORM_PLUGIN ("adplug",
-                   "AdPlug decoder",
-                   XMMS_VERSION,
-                   "Adlib file synthesiser",
-                   xmms_adplug_plugin_setup);
+XMMS_XFORM_PLUGIN_DEFINE ("adplug",
+                          "AdPlug decoder", XMMS_VERSION,
+                          "Adlib file synthesiser",
+                          xmms_adplug_plugin_setup);
 
 static gboolean
 xmms_adplug_plugin_setup (xmms_xform_plugin_t *xform_plugin)
